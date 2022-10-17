@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraPanning : MonoBehaviour
 {
 
+    public Camera instrcam;
     public Camera thirdcam;  //default main cam
     public Camera firstcam;
     public Camera pancam;
@@ -17,7 +18,8 @@ public class CameraPanning : MonoBehaviour
     {
  
         increment = 0.05f;
-        thirdcam.enabled = true;
+        instrcam.enabled = true;
+        thirdcam.enabled = false;
         firstcam.enabled = false;
         pancam.enabled = false;
         orthocam.enabled = false;
@@ -34,20 +36,24 @@ public class CameraPanning : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             camIndex++;
-            if (camIndex > 4) camIndex = 1;
+            if (camIndex > 5) camIndex = 1;
             if (camIndex == 1) {
                 orthocam.enabled = false;
+                instrcam.enabled = true;
+            }
+            if (camIndex == 2) {
+                instrcam.enabled = false;
                 thirdcam.enabled = true;
             }
-            else if (camIndex == 2) {
+            else if (camIndex == 3) {
                 thirdcam.enabled = false;
                 firstcam.enabled = true;
             }
-            else if (camIndex == 3) {
+            else if (camIndex == 4) {
                 firstcam.enabled = false;
                 pancam.enabled = true;
             }
-            else if (camIndex == 4) {
+            else if (camIndex == 5) {
                 pancam.enabled = false;
                 orthocam.enabled = true;
             }
