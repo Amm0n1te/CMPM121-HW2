@@ -647,7 +647,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595109177}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &595109179
 Camera:
   m_ObjectHideFlags: 0
@@ -1080,7 +1080,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787827859}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &787827861
 Camera:
   m_ObjectHideFlags: 0
@@ -1150,6 +1150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a255ce27e2b26274d9e0533052dd77ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pancam: {fileID: 787827861}
+  firstcam: {fileID: 963194227}
+  thirdcam: {fileID: 1307467017}
+  orthocam: {fileID: 595109179}
 --- !u!1001 &819887603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1489,7 +1493,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -1827,7 +1831,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307467015}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1307467017
 Camera:
   m_ObjectHideFlags: 0
