@@ -1,0 +1,25 @@
+CONTROLS: press [SPACE] to cycle between the four cameras
+
+DESCRIPTION
+This scene is a rough sketch of a captain's cabin of a skyship.  I wasn't able to spend nearly as much time on this project as I would have liked, as I am taking an extremely difficult CSE class and I needed to work on my capstone 170 project.  I tried to target more wooden objects that look like they might have come from around the late 1800s or early 1900s.  The stove stands out a bit.  This scene was supposed to help depict a universe with ships and cities in the sky, great mechanical engines of magic, and elven kingdoms from faraway planets.  I wanted this to be the captain's cabin of a humble skyship called the Albatross, which is an old skyship upgraded countless times over the years. Obviously it's inspired by steampunk, but also of high fantasy and science fiction.  I wasn't able to find a free good model on the Unity Asset Store to act as a main character for this scene, so I just used a generic looking dummy.  I tried searching for pirates, sailors, officers, victorian era people, Renaissance era people, but I didn't find anything.
+
+OBJECTS
+1. Banana Man (Main Character) [imported]
+2. Lanturn [imported]
+3. crystal inside lanturn [imported]
+4. mortar and pestle [imported]
+5. ceramic pitcher [imported]
+6. crystal flask [imported]
+7. cup [imported]
+8. cast iron pot [imported]
+9. wooden cabinet [imported]
+10. sink [imported]
+11. table [imported]
+12. stove [imported]
+13. tree ring table [imported]
+14. table next to window [imported]
+15. chair [imported]
+16. barrel [imported]
+17. bed [imported]
+18. crate [imported]
+19. plane [primitive]
