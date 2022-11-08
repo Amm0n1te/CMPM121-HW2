@@ -21,7 +21,7 @@ public class LightToggle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L)) {
             if (controller == 3) {
                 controller = 2;
-                thisLight.intensity = savedIntensity/2;
+                thisLight.intensity = savedIntensity/3;
             }
             else if (controller == 2) {
                 controller = 1;
