@@ -8,6 +8,7 @@ public class CameraPanning : MonoBehaviour
 {
 
     public Camera instrcam;
+    public Camera instrcam2;
     public Camera thirdcam;  //default main cam
     public Camera firstcam;
     public Camera pancam;
@@ -21,6 +22,7 @@ public class CameraPanning : MonoBehaviour
  
         increment = 0.05f;
         instrcam.enabled = true;
+        instrcam2.enabled = false;
         thirdcam.enabled = false;
         firstcam.enabled = false;
         pancam.enabled = false;
@@ -38,24 +40,28 @@ public class CameraPanning : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             camIndex++;
-            if (camIndex > 5) camIndex = 1;
+            if (camIndex > 6) camIndex = 1;
             if (camIndex == 1) {
                 orthocam.enabled = false;
                 instrcam.enabled = true;
             }
             if (camIndex == 2) {
                 instrcam.enabled = false;
+                instrcam2.enabled = true;
+            }
+            if (camIndex == 3) {
+                instrcam2.enabled = false;
                 thirdcam.enabled = true;
             }
-            else if (camIndex == 3) {
+            else if (camIndex == 4) {
                 thirdcam.enabled = false;
                 firstcam.enabled = true;
             }
-            else if (camIndex == 4) {
+            else if (camIndex == 5) {
                 firstcam.enabled = false;
                 pancam.enabled = true;
             }
-            else if (camIndex == 5) {
+            else if (camIndex == 6) {
                 pancam.enabled = false;
                 orthocam.enabled = true;
             }
