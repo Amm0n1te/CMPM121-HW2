@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//HOMEWORK 2 TEST COMMIT 2
+//HOMEWORK 2 TEST COMMIT 3 
 
 public class CameraPanning : MonoBehaviour
 {
